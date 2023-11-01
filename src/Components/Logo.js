@@ -1,7 +1,6 @@
 import React from 'react'
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { toggleSidebar } from '../Utils/Slices/toggleSlice';
-// import YouTube_Text_icon from "../Assets/YouTube_Text_icon.png";
 import YouTubeIcon from '../Assets/youtube3D_icon.png';
 import { RxHamburgerMenu } from "react-icons/rx";
 import { RxCross2 } from "react-icons/rx";
@@ -9,6 +8,7 @@ import { RxCross2 } from "react-icons/rx";
 
 const Logo = () => {
       const dispatch = useDispatch();
+      const toggle = useSelector(store => store.toggle.toggleItem);
 
       const handleToggle = () => {
         dispatch(toggleSidebar());
