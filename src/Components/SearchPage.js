@@ -23,7 +23,7 @@ const SearchPage = () => {
   ) : (
     <div className="mx-auto w-full max-w-[1200px] space-y-4">
       <FilterButtonList ButtonList={ButtonList} />
-      <div className="mx-auto flex max-w-[1200px] flex-col gap-y-3">
+      <div className="mx-auto flex max-w-[1200px] flex-col xxs:max-sm:gap-y-[2.75rem] sm:gap-y-3">
         {items?.map((item) => {
           return (
             <Link
