@@ -9,7 +9,7 @@ export const VIDEO_BY_ID = `https://youtube.googleapis.com/youtube/v3/videos?par
 
 export const SEARCH_SUGGESTION_API = `https://corsproxy.io/?http://suggestqueries.google.com/complete/search?client=firefox&ds=yt&q=`;
 
-export const COMMENTS_URL = `http://hn.algolia.com/api/v1/items/16582136`;
+export const COMMENTS_URL = `https://corsproxy.io/?http://hn.algolia.com/api/v1/items/16582136`;
 
 export const CHANNEL_URL = `https://youtube.googleapis.com/youtube/v3/channels?part=snippet&part=statistics&part=contentDetails&key=${API_KEY}&id=`;
 
