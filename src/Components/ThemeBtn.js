@@ -3,7 +3,7 @@ import React, {useState, useEffect} from "react";
 const ThemeBtn = () => {
 
     const [themeMode, setThemeMode] = useState(
-      localStorage.getItem("themeMode") || "light",
+      localStorage.getItem("themeMode") || "dark",
     );
 
     useEffect(() => {
