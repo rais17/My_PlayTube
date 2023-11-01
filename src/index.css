@@ -1,0 +1,29 @@
+html {
+    font-size: 100%
+}
+
+
+@media (min-width: 1080px) and (max-width: 1408px) {
+  html {
+    font-size: 96.875%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1080px) {
+  html {
+    font-size: 81.25%;
+  }
+}
+@media (min-width: 640px) and (max-width: 768px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+
+@media (max-width: 640px) {
+  html {
+    font-size: 70%;
+  }
+  
+}

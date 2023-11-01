@@ -1,0 +1,26 @@
+import { createSlice } from "@reduxjs/toolkit";
+
+const toggleSlice = createSlice({
+    name: 'toggle',
+    initialState: {
+        toggleItem: true,
+        isWatchPage: false
+    },
+    reducers: {
+        toggleSidebar: (state) => {
+            state.toggleItem = !state.toggleItem
+        },
+        closeSidebar: (state) => {
+            state.toggleItem = false;
+            state.isWatchPage = true;
+        },
+        toggleIsWatchPage: (state) => {
+            state.isWatchPage = false;
+        }
+        
+    }
+})
+
+export const { toggleSidebar, closeSidebar, toggleIsWatchPage } = toggleSlice.actions;
+
+export default toggleSlice.reducer;
