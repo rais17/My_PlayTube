@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# YouTube Clone aka My PlayTube
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a YouTube clone that replicates the core features and functionality of the popular video-sharing platform, YouTube. It is built using ReactJS, Tailwind CSS, and state management through Redux. The YouTube Data API is used for fetching data and powering the search and video playback functionalities.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Search Functionality**: Users can search for videos using keywords or queries, just like on YouTube.
 
-### `npm start`
+- **Suggestion Features**: The application provides suggestions as users type in the search bar, helping them discover relevant content.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Debouncing**: To optimize search requests and prevent excessive API calls, debouncing is implemented when typing in the search bar.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Caching**: The application caches relevant data to improve load times and user experience.
 
-### `npm test`
+- **Memoization**: Memoization techniques are applied to enhance performance by storing and reusing results of expensive function calls.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Redux**: State management is handled using Redux, providing a centralized and predictable state for the application.
 
-### `npm run build`
+- **React Router DOM**: Routing is implemented to navigate between Home, Search, and Watch pages seamlessly.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Higher Order Component (HOC)**: HOCs are used to enhance component reusability and to apply certain features to multiple components.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Generic Component**: Generic components are created to encapsulate common functionality and ensure a consistent user interface.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Custom Hooks**: Custom hooks are developed to encapsulate and share logic across different components.
 
-### `npm run eject`
+- **API Integration**: The YouTube Data API is integrated to fetch video data and support features such as video playback and searching.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Responsive Design**: The application is responsive and provides a seamless experience on various screen sizes and devices.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Pages
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. **Home**: The landing page where users can explore recommended videos.
+2. **Search**: Allows users to search for videos based on their interests.
+3. **Watch**: Provides the video playback interface, allowing users to watch the selected video and interact with the video's comments and live chat.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Additional Features
 
-## Learn More
+- **Shimmer Effect**: Enhances the user interface by providing a loading shimmer effect for content placeholders.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **Nested Comments**: Supports nested comments for more interactive and organized discussions.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Live Chatting using API Polling**: Implements live chat functionality through API polling, enabling users to engage in real-time conversations.
 
-### Code Splitting
+## Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- `src/`: The root directory of the project.
+  - `assets/`: Contains project-specific assets like images and videos.
+  - `components/`: Houses all React components used in the project.
+  - `utils/`: Holds utility modules and files.
+    - `custom-hooks/`: Custom hooks used in the application.
+    - `shimmer/`: Files related to the shimmer effect, enhancing the user interface.
+    - `slices/`: Contains Redux slices for different parts of your application state.
+    - `store/`: Manages the Redux store for central state management.
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
