@@ -16,11 +16,14 @@ const toggleSlice = createSlice({
         },
         toggleIsWatchPage: (state) => {
             state.isWatchPage = false;
+        },
+        closeSidebarAtMobile: (state) => {
+            state.toggleItem = false;
         }
         
     }
 })
 
-export const { toggleSidebar, closeSidebar, toggleIsWatchPage } = toggleSlice.actions;
+export const { toggleSidebar, closeSidebar, toggleIsWatchPage, closeSidebarAtMobile } = toggleSlice.actions;
 
 export default toggleSlice.reducer;
