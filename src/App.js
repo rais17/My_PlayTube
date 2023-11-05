@@ -15,7 +15,7 @@ function App() {
 
   const handleResize = () => {
 
-    if (window.innerWidth < 640)
+    if (window.innerWidth < 768)
       dispatch(closeSidebarAtMobile());
   }
 
