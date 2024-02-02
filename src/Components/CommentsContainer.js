@@ -13,9 +13,9 @@ const CommentsContainer = () => {
   ) : (
     <div className="my-4 w-full rounded-2xl bg-gray-100 bg-opacity-50 p-4 dark:bg-[#1f1f1f] dark:text-gray-200">
       <h1 className="text-lg font-bold tracking-wide font-Roboto">
-        {commentsData.children.length} Comments
+        {commentsData?.children?.length} Comments
       </h1>
-      <CommentList comments={commentsData.children} />
+      <CommentList comments={commentsData?.children} />
     </div>
   );
 }
